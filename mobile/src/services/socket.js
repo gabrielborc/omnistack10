@@ -8,9 +8,7 @@ function subscribeToNewDevs(subscribeFunction) {
    socket.on('new-dev', subscribeFunction) ;
 }
 
-function connect(latitude, 
-    
-    , techs) {
+function connect(latitude, longitude, techs) {
     socket.io.opts.query = {
         longitude,
         latitude,
